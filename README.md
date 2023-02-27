@@ -14,5 +14,7 @@ Simple website used to showcase the application
 
 - add devs info
 
+- add calendar (divs or something)
+
 - eventually actually put content
 

@@ -1,6 +1,6 @@
 baseURL: http://something-fresh.org/
 languageCode: en-us
-title: Hugo Fresh Theme
+title: Empresta.me
 theme: hugo-fresh
 googleAnalytics: # Put in your tracking code without quotes like this: UA-XXXXXX...
 # Disables warnings
@@ -21,28 +21,28 @@ params:
   # preloader: false
   navbarlogo:
   # Logo (from static/images/logos/___)
-    image: logos/fresh.svg
+    image: logos/bee.svg
     link: /
     # Default width/height. Uncomment if you need to change
-    # width: 112
-    # height: 28
+    #width: 70
+    #height: 60 # ----doesnt work (probably the navbar has its own limit)
   font:
     name: "Open Sans"
     sizes: [400,600]
   hero:
     # Main hero title
-    title: Manage. Deploy.
+    title: Empresta.laaaaa
     # Hero subtitle (optional)
-    subtitle: Lorem ipsum sit dolor amet is dummy text used by the typography industry
+    subtitle: Really cool slogan like idk mess with bees, get shot in the knees
     # Button text
     buttontext: Get started
     # Where the main hero button links to
     buttonlink: "#"
     # Hero image (from static/images/___)
-    image: illustrations/worker.svg
+    image: logos/honeycomb.svg
     # Footer logos (from static/images/logos/clients/*.svg)
     # urls are optional
-    clientlogos:
+    clientlogos: # ----were not using these, they're still here just in case they may come in usefull
     - logo: systek
       url: https://google.com
     - logo: tribe
@@ -67,10 +67,7 @@ params:
       url: /
     - title: Dropdown item
       url: /
-  - title: Log in
-    url: /
-  - title: Sign up
-    url: /
+  - title: Dark Mode
     button: true
   sidebar:
     # Logo (from /images/logos/___.svg)
@@ -107,24 +104,20 @@ params:
       - text: App settings
         url: /
   section1:
-    title: Great power comes
-    subtitle: with great responsibility
+    title: Project
+    subtitle: | # < this thingy should keep the break lines, I have no ideia why its all in a single paragraph
+      Empresta.me is a modern application used to share items with anyone.
+      With a simple interface, our users can easily connect with people around them to lend and borrow items they're needing.
+      And, thanks to our Vouch Reputation System, without ever doubting if the person is trustworthy.
     tiles:
-    - title: App builder
+    - title: Demo
       icon: mouse-globe
-      text: This is some explanatory text that is on two rows
       url: /
-      buttonText: Free trial
-    - title: Cloud integration
+      buttonText: Try it On
+    - title: Poster
       icon: laptop-cloud
-      text: This is some explanatory text that is on two rows
       url: /
-      buttonText: Get started
-    - title: Add-ons & plugins
-      icon: plug-cloud
-      text: This is some explanatory text that is on two rows
-      url: /
-      buttonText: Get started
+      buttonText: Check it Out
   section2:
     title: You're here because you want the best
     subtitle: And we know it

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! bulma.io v0.7.0 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
   from {
@@ -7107,16 +7108,21 @@ body #backtotop a {
   /* Firefox 18- */
   color: #cecece; }
 
-body {
-  background-color: #333333; }
+/* dark mode 😎*/
+/* body {
+    background-color: $light-blue-grey;
+}
 
-#section1 {
-  background-color: #333333; }
+#section1{
+    background-color: $blue-grey;
+}
 
-#section3 {
-  background-color: #333333; }
+#section3{
+    background-color: $blue-grey;
+}
 
-#section5 {
-  background-color: #333333; }
+#section5{
+    background-color: $blue-grey;
+} */
 
 /*# sourceMappingURL=style.css.map */
