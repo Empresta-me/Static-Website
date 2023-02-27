@@ -1,0 +1,45 @@
+<div class="type-animation-container">
+    <span id="type-animation-text"></span>
+  </div>
+  
+  <style>
+  .type-animation-container {
+    position: relative;
+    font-size: 24px;
+    color: #000;
+  }
+  
+  .type-animation-container #type-animation-text:after {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+    margin-left: 5px;
+    border-right: 2px solid;
+    animation: typing 0.5s steps(10) infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      transform: scaleX(0);
+    }
+    to {
+      transform: scaleX(1);
+    }
+  }
+</style>
+  
+
+<script>
+function typeAnimation(text) {
+    const container = document.getElementById("type-animation-text");
+    let i = 0;
+    setInterval(function() {
+    if (i < text.length) {
+        container.innerHTML += text.charAt(i);
+        i++;
+    }
+    }, 100);
+}
+</script>
+    
