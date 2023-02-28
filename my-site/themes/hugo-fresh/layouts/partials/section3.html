@@ -4,25 +4,204 @@
 {{- $image      := index $section3 "image" }}
 {{- $buttonText := index $section3 "buttontext" }}
 {{- $buttonLink := index $section3 "buttonlink" }}
-<section class="section section-feature-grey is-medium" id="section3">
-  <div class="container">
-    <div class="columns">
-      <div class="column is-10 is-offset-1">
-        <div class="has-text-centered">
-          <img class="pushed-image" src="{{ printf "/images/%s" $image | relURL }}">
-        </div>
-      </div>
-    </div>
 
-    <div class="title-wrapper has-text-centered">
-      <h2 class="title is-2">{{ $title }}</h2>
-      <h3 class="subtitle is-5 is-muted">{{ $subtitle }}</h3>
-    </div>
+<section class="section section-feature-grey is-medium">
+  <style>.paragrafo{margin:0 !important;}</style>
 
-    <p class="has-text-centered mt-20">
-      <a class="button cta is-large rounded secondary-btn raised" href="{{ $buttonLink }}">
-        {{ $buttonText }}
-      </a>
-    </p>
+  <div class="title-wrapper has-text-centered">
+    <h2 class="title is-2">{{ $title }}</h2>
+    <br>
+    <br>
+    <br>
   </div>
+
+  <table style="margin: 0 auto; width: 110%">
+    <tr>
+      <td>
+        <div class="container" >
+          <div class="columns">
+            <div class="column col">
+              <article class="media icon-box">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <span class="icon-box-title">Iteration 1</span>
+                      <span class="icon-box-text">14 - 28 Feb</span>
+                    </p>
+                    <div class="divider"></div>
+                    <div class="icon-box-text">
+                      <p class="paragrafo">Project Inception</p>
+                      <p class="paragrafo">Project Calendar</p>
+                      <p class="paragrafo">Comunication Plan</p>
+                    </div>
+                    
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="column col">
+              <article class="media icon-box">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <span class="icon-box-title">Iteration 2</span>
+                      <span class="icon-box-text">01 - 14 March</span>
+                    </p>
+                    <div class="divider"></div>
+                    <div class="icon-box-text">
+                      <p class="paragrafo">Project Architecture</p>
+                      <p class="paragrafo">Visual prototype for the core tasks</p>
+                      <p class="paragrafo">API endpoints description.</p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="column col">
+              <article class="media icon-box">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <span class="icon-box-title">Iteration 3</span>
+                      <span class="icon-box-text">15 - 28 March</span>
+                    </p>
+                    <div class="divider"></div>
+                    <div class="icon-box-text">
+                      <p class="paragrafo">Paragraph 1</p>
+                      <p class="paragrafo">Paragraph 2</p>
+                      <p class="paragrafo">Paragraph 3</p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column col">
+              <article class="media icon-box">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <span class="icon-box-title">Iteration 4</span>
+                      <span class="icon-box-text">29 - 11 April</span>
+                    </p>
+                    <div class="divider"></div>
+                    <div class="icon-box-text">
+                      <p class="paragrafo">Paragraph 1</p>
+                      <p class="paragrafo">Paragraph 2</p>
+                      <p class="paragrafo">Paragraph 3</p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="column col">
+              <article class="media icon-box">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <span class="icon-box-title">Iteration 5</span>
+                      <span class="icon-box-text">11 - 25 April</span>
+                    </p>
+                    <div class="divider"></div>
+                    <div class="icon-box-text">
+                      <p class="paragrafo">Paragraph 1</p>
+                      <p class="paragrafo">Paragraph 2</p>
+                      <p class="paragrafo">Paragraph 3</p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="column col">
+              <article class="media icon-box">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <span class="icon-box-title">Iteration 6</span>
+                      <span class="icon-box-text">26 - 09 May</span>
+                    </p>
+                    <div class="divider"></div>
+                    <div class="icon-box-text">
+                      <p class="paragrafo">Paragraph 1</p>
+                      <p class="paragrafo">Paragraph 2</p>
+                      <p class="paragrafo">Paragraph 3</p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column col">
+              <article class="media icon-box">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <span class="icon-box-title">Iteration 7</span>
+                      <span class="icon-box-text">10 - 23 May</span>
+                    </p>
+                    <div class="divider"></div>
+                    <div class="icon-box-text">
+                      <p class="paragrafo">Paragraph 1</p>
+                      <p class="paragrafo">Paragraph 2</p>
+                      <p class="paragrafo">Paragraph 3</p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="column col">
+              <article class="media icon-box">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <span class="icon-box-title">Iteration 8</span>
+                      <span class="icon-box-text">23 - 30 May</span>
+                    </p>
+                    <div class="divider"></div>
+                    <div class="icon-box-text">
+                      <p class="paragrafo">Paragraph 1</p>
+                      <p class="paragrafo">Paragraph 2</p>
+                      <p class="paragrafo">Paragraph 3</p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="column col">
+              <article class="media icon-box">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <span class="icon-box-title">Iteration 9</span>
+                      <span class="icon-box-text">30 - 06 Jun</span>
+                    </p>
+                    <div class="divider"></div>
+                    <div class="icon-box-text">
+                      <p class="paragrafo">Paragraph 1</p>
+                      <p class="paragrafo">Paragraph 2</p>
+                      <p class="paragrafo">Paragraph 3</p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <!-- <div class="title-wrapper has-text-centered">
+    <h2 class="title is-2">{{ $title }}</h2>
+    <h3 class="subtitle is-5 is-muted">{{ $subtitle }}</h3>
+  </div>
+
+  <p class="has-text-centered mt-20">
+    <a class="button cta is-large rounded secondary-btn raised" href="{{ $buttonLink }}">
+      {{ $buttonText }}
+    </a>
+  </p> -->
 </section>

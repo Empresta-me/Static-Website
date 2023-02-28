@@ -2,6 +2,7 @@
 {{- $title    := index $section4 "title" }}
 {{- $subtitle := index $section4 "subtitle" }}
 {{- $clients  := index $section4 "clients" }}
+{{- $moreClients := index $section4 "moreclients" }}
 <section class="section is-medium section-secondary" id="section4">
   <div class="container">
 
@@ -12,14 +13,13 @@
       {{- end }}
     </div>
 
+    <br>
+    <br>
     <div class="content-wrapper">
-      <div class="columns is-vcentered">
+      <div class="columns is-vcentered is-centered">
         {{- range $clients }}
-        <div class="column is-4">
+        <div class="column is-3">
           <figure class="testimonial">
-            <blockquote>
-              {{ .quote }}
-            </blockquote>
             <div class="author">
               <img src="{{ printf "/images/illustrations/faces/%s.png" (string .img) | relURL }}" alt=""/>
               <h5>{{ .name }}</h5>
@@ -29,6 +29,18 @@
         </div>
         {{- end }}
       </div>
+      <div class="columns is-vcentered is-centered">
+      {{- range $moreClients }}
+      <div class="column is-3">
+        <figure class="testimonial">
+          <div class="author">
+            <img src="{{ printf "/images/illustrations/faces/%s.png" (string .img) | relURL }}" alt=""/>
+            <h5>{{ .name }}</h5>
+            <span>{{ .job }}</span>
+          </div>
+        </figure>
+      </div>
+      {{- end }}
     </div>
   </div>
 </section>
