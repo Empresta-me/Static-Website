@@ -93,8 +93,7 @@
     document.body.classList.add("dark-mode");
     if (localStorage.getItem("dark-mode") === "on") {
       // Dark mode is not active
-      //localStorage.removeItem("dark-mode"); // Remove dark mode setting from local storage
-      localStorage.setItem("dark-mode", "off"); // Remove dark mode setting to local storage
+      localStorage.setItem("dark-mode", "off"); // Remove dark mode setting from local storage
       document.body.classList.remove("dark-mode");
     } else {
       // Dark mode is active
@@ -114,7 +113,12 @@ if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
   if (localStorage.getItem("dark-mode") === "on") {
     document.body.classList.add("dark-mode")
   }
-};
-
+}
+else{ // If the user's OS theme preference is set to 'no-preference'
+  document.body.classList.remove("dark-mode");
+  if (localStorage.getItem("dark-mode") === "on") {
+    document.body.classList.add("dark-mode")
+  }
+}
 </script>
 
