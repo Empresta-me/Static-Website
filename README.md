@@ -5,16 +5,12 @@ Simple website used to showcase the application
 
 ## TODO
 
-- make a button to switch between light and dark mode
-	- the css will probably be set in the themes/hugo-fresh/assets/fresh/core.scss
-	- probably scamm the button from **FixIt** theme
-
+- tweak darkmode colors
 
 - change logo to ours (when we have one) 
 
 - add devs info
-
-- add calendar (divs or something)
+	- make them clickable and connect to github or something 
 
 - eventually actually put content
 

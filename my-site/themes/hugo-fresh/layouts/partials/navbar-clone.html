@@ -69,8 +69,8 @@
           </div>
         </div>
         {{- else if .button }}
-        <a href="{{ .url }}" class="navbar-item">
-          <span class="button signup-button rounded secondary-btn raised">
+        <a class="navbar-item">
+          <span id="dark_mode_clone" class="button signup-button rounded secondary-btn raised">
             {{ .title }}
           </span>
         </a>
@@ -84,3 +84,27 @@
     </div>
 </div>
 </nav>
+
+
+
+<script>
+  const button_clone = document.getElementById('dark_mode_clone');
+
+  button_clone.addEventListener('click', () => {
+    document.body.classList.add("dark-mode");
+    if (localStorage.getItem("dark-mode") === "on") {
+      // Dark mode is not active
+      localStorage.removeItem("dark-mode"); // Remove dark mode setting from local storage
+      document.body.classList.remove("dark-mode");
+    } else {
+      // Dark mode is active
+      localStorage.setItem("dark-mode", "on"); // Save dark mode setting to local storage
+      document.body.classList.add("dark-mode");
+    }
+  });
+
+// Check local storage for dark mode setting on page load
+if (localStorage.getItem("dark-mode") === "on") {
+  document.body.classList.add("dark-mode");
+}
+</script>

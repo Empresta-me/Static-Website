@@ -17,21 +17,10 @@ Main SCSS file / Fresh
 @import 'partials/testimonials';
 @import 'partials/responsive';
 @import 'partials/utils';
+@import "partials/dark-mode";
 
 
-/* dark mode 😎*/
-/* body {
-    background-color: $light-blue-grey;
-}
-
-#section1{
-    background-color: $blue-grey;
-}
-
-#section3{
-    background-color: $blue-grey;
-}
-
-#section5{
-    background-color: $blue-grey;
-} */
+// Import the dark-mode styles only if the user prefers dark color scheme
+/* @media (prefers-color-scheme: dark) {
+    @import "partials/dark-mode";
+}*/
