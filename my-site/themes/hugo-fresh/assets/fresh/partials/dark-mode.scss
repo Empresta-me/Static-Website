@@ -1,22 +1,10 @@
 /* dark mode 😎*/
 
-.dark-mode {
+.dark-mode , .dark-mode #navbar-clone{
   background-color: $blue-grey;
   color: $light-blue-grey;
 }
 
-.dark-mode #section1 {
+.dark-mode #section1 , .dark-mode #section3 , .dark-mode #section5 {
   background-color: $dark-grey;
-}
-
-.dark-mode #section3 {
-  background-color: $dark-grey;
-}
-
-.dark-mode #section5 {
-  background-color: $dark-grey;
-}
-
-.dark-mode #navbar-clone{
-  background-color: $blue-grey;
 }

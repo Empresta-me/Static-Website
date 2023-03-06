@@ -7109,21 +7109,12 @@ body #backtotop a {
   color: #cecece; }
 
 /* dark mode 😎*/
-.dark-mode {
+.dark-mode, .dark-mode #navbar-clone {
   background-color: #444F60;
   color: #98a9c3; }
 
-.dark-mode #section1 {
+.dark-mode #section1, .dark-mode #section3, .dark-mode #section5 {
   background-color: #344258; }
-
-.dark-mode #section3 {
-  background-color: #344258; }
-
-.dark-mode #section5 {
-  background-color: #344258; }
-
-.dark-mode #navbar-clone {
-  background-color: #444F60; }
 
 /* @media (prefers-color-scheme: dark) {
     @import "partials/dark-mode";
