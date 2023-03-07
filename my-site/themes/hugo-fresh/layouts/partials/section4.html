@@ -4,6 +4,7 @@
 {{- $clients  := index $section4 "clients" }}
 {{- $moreClients := index $section4 "moreclients" }}
 {{- $orientorClients := index $section4 "orientorClients" }}
+{{- $url := index $section4 "url" }}
 
 <section class="section is-medium section-secondary" id="section4">
   <div class="container">
@@ -14,18 +15,34 @@
       <h3 class="subtitle is-5 light-text">{{ . }}</h3>
       {{- end }}
     </div>
-
-    <br>
-    <br>
+    
+    
     <div class="content-wrapper">
+      
+    <div style=" padding-left: 90%;" >
+      <svg height="30" width="200">
+    <a href="https://www.youtube.com/watch?v=W31e9meX9S4">  
+        <text x="0" y="15" fill="black" transform="rotate(20 20,40)">Click Us!</text>
+    </a>
+      </svg> 
+    </div> 
+    <!-- TODO: get these 2 divs closer -->
+    <div style="padding-left: 83%;">
+    <a href="https://www.youtube.com/watch?v=W31e9meX9S4">  
+      <img src="/images/illustrations/icons/curved-arrow.svg" />      
+    </a>
+    </div>
+    
       <div class="columns is-vcentered is-centered">
         {{- range $orientorClients }}
         <div class="column is-3">
           <figure class="testimonial">
             <div class="author">
+              <a href= "{{ .url }}">
               <img src="{{ printf "/images/illustrations/faces/%s.png" (string .img) | relURL }}" alt=""/>
               <h5>{{ .name }}</h5>
               <span>{{ .job }}</span>
+              </a>
             </div>
           </figure>
         </div>
@@ -36,9 +53,11 @@
         <div class="column is-3">
           <figure class="testimonial">
             <div class="author">
+              <a href= "{{ .url }}">
               <img src="{{ printf "/images/illustrations/faces/%s.png" (string .img) | relURL }}" alt=""/>
               <h5>{{ .name }}</h5>
               <span>{{ .job }}</span>
+              </a>
             </div>
           </figure>
         </div>
@@ -49,9 +68,11 @@
       <div class="column is-3">
         <figure class="testimonial">
           <div class="author">
+            <a href= "{{ .url }}">
             <img src="{{ printf "/images/illustrations/faces/%s.png" (string .img) | relURL }}" alt=""/>
             <h5>{{ .name }}</h5>
             <span>{{ .job }}</span>
+            </a>
           </div>
         </figure>
       </div>

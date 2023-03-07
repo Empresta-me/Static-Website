@@ -10,7 +10,7 @@ Simple website used to showcase the application
 - change logo to ours (when we have one) 
 
 - add devs info
-	- make them clickable and connect to github or something 
+	- change to github or linkedIn 
 
 - eventually actually put content
 

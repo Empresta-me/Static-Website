@@ -13,7 +13,6 @@ markup:
       unsafe: true # Allows you to write raw html in your md files
 
 params: 
-  dark_mode: false
   # Open graph allows easy social sharing. If you don't want it you can set it to false or just delete the variable
   openGraph: false
   # Used as meta data; describe your site to make Google Bots happy
@@ -57,7 +56,7 @@ params:
   # Customizable navbar. For a dropdown, add a "sublinks" list.
   navbar:
   - title: Documentation
-    url: /
+    url: section4
   - title: Source Code
     url: https://github.com/Empresta-me/
   #- title: Dropdown
@@ -151,24 +150,30 @@ params:
     - name: André Zuquete
       job: Supervisor
       img: 3
+      url: https://www.youtube.com/watch?v=QrvV-R3y2xY
     clients:
     - name: Bruno Moura
       job: Backend Developer
       img: 1
+      url: https://www.youtube.com/watch?v=2fngvQS_PmQ
     - name: João Teles
       job: Backend Developer
       img: 2
+      url: https://www.youtube.com/watch?v=KAljnUezZFk
     moreClients:
     - name: Inês Castro
       job: Team Leader
       img: 3
+      url: http://linkedin.com/in/inês-castro-baptista
     - name: Rafael Remígio
       quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
       job: Android Dev
       img: 1
+      url: https://www.youtube.com/watch?v=W31e9meX9S4
     - name: Diogo Silva
       job: DevOps Master
       img: 2
+      url: https://github.com/DiogoAlves002
 
   section5:
     title: Drop us a line or two

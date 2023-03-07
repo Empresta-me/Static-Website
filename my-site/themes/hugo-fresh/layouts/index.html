@@ -35,3 +35,9 @@
     {{ end }}
     
 {{ end }}
+
+{{ define "documentation" }}
+    {{ if .Site.Params.hero }}
+    {{ partial "hero.html" . }}
+    {{ end }}
+{{ end }}
